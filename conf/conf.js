@@ -15,7 +15,7 @@ exports.config = {
 
   framework: 'jasmine',
 
-  specs: ['E:\\ProtractorWorkspace\\CLICKDOC\\tests\\physicianSearchTest2.js'],
+  specs: ['../tests/*.js'],
 
   params: {
     url: 'https://demo.clickdoc.de/cms-de/',

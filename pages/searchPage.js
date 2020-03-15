@@ -7,7 +7,7 @@ let searchPage = function () {
     let profile_Button_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[1]/a[2]/button'));
     let address_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]'));
     let online_Appointments_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[2]/div'));
-    let availableAppointments_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/app-physician-calendar/div/div[3]/div/div[1]/div[2]/span'));
+    let availableAppointments_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/app-physician-calendar/div/div[1]/div[1]/span[1]'));
     let showMoreResults_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a'));
     let result_Distance_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]/div/span[2]'));
     let video_Conference_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[2]/div[1]'));

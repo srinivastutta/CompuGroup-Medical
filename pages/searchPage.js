@@ -34,7 +34,7 @@ let searchPage = function () {
     //Result Search Section functions
 
     this.validateResultBarrierElement = function (message) {
-        browser.sleep(2000);
+        browser.sleep(3000);
         result_Barrier_Element.isDisplayed().then(function (ResultBarrierElement) {
             console.log(ResultBarrierElement);
             expect(ResultBarrierElement).toEqual(true);
@@ -125,7 +125,7 @@ let searchPage = function () {
 
     this.clickShowMoreResultsButton = function () {
         showMoreResults_Element.click();
-    
+        browser.sleep(3000)
     }
 
     this.clickDetailLink = function () {

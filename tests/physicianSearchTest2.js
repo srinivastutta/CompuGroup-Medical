@@ -24,7 +24,6 @@ describe('Physician Search Features', function () {
         expect(listCount.count()).toEqual(10);
         //After clicking "show more results" button, the doctor list count should be 20
         searchPage.clickShowMoreResultsButton();
-        browser.sleep(2000)
         expect(listCount.count()).toEqual(20);
 
         console.log("==========================================================")
@@ -103,11 +102,42 @@ describe('Physician Search Features', function () {
         browser.executeScript("window.scrollBy(0, 500)");
         searchPage.clickAlphabeticByDoctorElement();
         browser.sleep(2000);
+        //Getting Doctor List from Application
         element.all(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card/div/div/div[2]'))
-            .getText().then(function (text) {
-                console.log(text)
+            .getText().then(function (DroctorFullName) {
+                //Trimming LastName from Doctor FullName
+                let variable1 = [];
+                DroctorFullName.forEach(function (EachDroctorString) {
+
+                    if (EachDroctorString.includes(',')) {
+                        if (EachDroctorString.includes('Dr.') || EachDroctorString.includes('dr.')) {
+                            var str = EachDroctorString.substring(0, EachDroctorString.indexOf(","));
+                            variable1.push(str.replace('Dr. ', '').replace('dr. ', ''));
+                        }
+                        else {
+                            variable1.push(EachDroctorString.substring(0, EachDroctorString.indexOf(",")));
+                        }
+                    }
+                    else {
+                        var n = EachDroctorString.split(" ");
+                        variable1.push(n[n.length - 1]);
+                    }
+
+                });
+                console.log(variable1);
+                console.log("==========================================================")
+                let variable2 = JSON.parse(JSON.stringify(variable1));
+                console.log(variable2.sort());
+
+                if (variable1 == variable2) {
+                    expect(true).toBe(true);
+                    console.log('Sorting is working properly')
+                }
+                else {
+                    expect(true).toBe(false);
+                    console.log('Sorting is not working properly')
+                }
             })
-        console.log("==========================================================")
     })
 
     it('Check the „Distance-Sort“ option in the sorting section and validate sorted by relative distance', function () {
@@ -119,25 +149,30 @@ describe('Physician Search Features', function () {
 
         //Getting the loaded top 10  distances from page source
         element.all(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card/div/div[2]/div/div/div[1]/div[2]/span[2]/span[1]'))
-            .getText().then(function (value) {
+            .getText().then(function (sortedDistanceFromApplication) {
 
-                //Distance Values from Application
-                let sortedDistanceFromApplication = value;
+                //Sorted Distance Radius from Application
                 console.log(sortedDistanceFromApplication)
-
-                //Sorting Value Programatically
-                let sortedDistance = sortedDistanceFromApplication.sort();
-                //Comparing Distance Values from Application and Programatically sorting Values 
-                for (let i = 0; i < sortedDistanceFromApplication.length; i++) {
-                    expect(sortedDistanceFromApplication[i]).toBe(sortedDistance[i]);
-
+                console.log("==========================================================")
+                //Sorted Distance Radius Programatically
+                let sortedDistanceProgramatically = JSON.parse(JSON.stringify(sortedDistanceFromApplication));
+                let SortDistPro= sortedDistanceProgramatically.sort(function (a,b){
+                 return a-b;
+                })
+                console.log(SortDistPro)
+                if (JSON.stringify(sortedDistanceFromApplication) === JSON.stringify(SortDistPro) ) {
+                    expect(true).toBe(true);
+                    console.log('Distance Sorting is showing accurately')
                 }
-                browser.sleep(5000);
+                else {
+                    expect(true).toBe(false);
+                    console.log('Distance Sorting is not showing accurately')
+                }
             })
         console.log("==========================================================")
     })
 
-    it('Drage the Slide bar and Release ', function () {
+    it('Drage the Slide bar and Release and validate radius accroding to slide bar', function () {
 
         browser.executeScript("window.scrollBy(0, 600)");
         browser.sleep(3000)
@@ -145,17 +180,27 @@ describe('Physician Search Features', function () {
 
         //Radius dragging to 10 KM
         browser.actions().dragAndDrop(element1, { x: 7, y: 100 }).perform();
+        browser.executeScript("window.scrollBy(0, 600)");
         browser.sleep(3000)
-
+        //Getting the Radius KM from Application
         element.all(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card/div/div[2]/div/div/div[1]/div[2]/span[2]/span[1]'))
-            .getText().then(function (Val) {
-                let sortedDistanceFromApplication1 = Val;
-                console.log(sortedDistanceFromApplication1)
+            .getText().then(function (distanceNumbers) {
 
+                distanceNumbers.forEach(function (distNumber) {
+                    //just to find number
+                    let item = distNumber.match(/\d/g);
+                    //checking <= 10 KM or >10 KM 
+                    KM = item.join("");
+                    if (KM <= 1000) {
+                        expect(true).toBe(true);
+                    }
+                    else if (KM > 1000) {
+                        console.log('Exceeding Radius Range is : ' + KM)
+                        expect(true).toBe(false);
+                    }
+                });
             })
-
-
-        console.log("==========================================================")
     })
+
 
 });

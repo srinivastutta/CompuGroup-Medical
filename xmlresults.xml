@@ -1,54 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="2" tests="29" time="130.318">
- <testsuite name="Login Features" timestamp="2020-03-15T09:42:08" hostname="localhost" time="68.033" errors="0" tests="8" skipped="0" disabled="0" failures="0">
-  <testcase classname="Login Features" name="Verify CLICKDOC Image is Displayed on HomePage" time="31.011" />
-  <testcase classname="Login Features" name="Verify Login Dialog Box Elements are Displayed " time="7.462" />
-  <testcase classname="Login Features" name="Verify Login functionality wihout Credentials  " time="0.272" />
-  <testcase classname="Login Features" name="Verify Login functionality with valid email and invalid password" time="2.267" />
-  <testcase classname="Login Features" name="Verify Login functionality with invalid email and empty password" time="5.927" />
-  <testcase classname="Login Features" name="Verify Login functionality with valid email and valid password" time="14.706" />
-  <testcase classname="Login Features" name="Verify Profile Button having MyProfile and Logout Elements" time="2.222" />
-  <testcase classname="Login Features" name="Verify LogOut Functionality " time="4.162" />
- </testsuite>
- <testsuite name="Physician Search Features" timestamp="2020-03-15T09:43:16" hostname="localhost" time="21.18" errors="0" tests="10" skipped="0" disabled="0" failures="0">
-  <testcase classname="Physician Search Features" name="Verify CLICKDOC Image is Displayed on HomePage" time="1.52" />
-  <testcase classname="Physician Search Features" name="Verify User Navigates to Search Page" time="2.326" />
-  <testcase classname="Physician Search Features" name="Verify Search Button Section Elements" time="0.32" />
-  <testcase classname="Physician Search Features" name="Verify Search Button Section Elements" time="0.176" />
-  <testcase classname="Physician Search Features" name="Verify Inital Result Section Message Validation" time="0.046" />
-  <testcase classname="Physician Search Features" name="Enter value (Beate) in Name Input Field In Search Section and Validate Fitting Suggestions" time="1.278" />
-  <testcase classname="Physician Search Features" name="Enter value (Beate Edel) in Name Input Field In Search Section and Validate Fitting Suggestions" time="1.365" />
-  <testcase classname="Physician Search Features" name="Enter value (Beate Edelse) in Name Input Field In Search Section and Validate Fitting Suggestions" time="10.298" />
-  <testcase classname="Physician Search Features" name="Enter value (Beate) in Name Input Field In Search Section and submit and validate the results should contian &quot;Beate&quot;" time="1.549" />
-  <testcase classname="Physician Search Features" name="Check Search Results Objects" time="2.298" />
- </testsuite>
- <testsuite name="Physician Search Features" timestamp="2020-03-15T09:43:37" hostname="localhost" time="41.105" errors="0" tests="11" skipped="0" disabled="0" failures="2">
-  <testcase classname="Physician Search Features" name="Scrolling to bottom of the page and Verify &quot;show more results&quot; button" time="8.48" />
-  <testcase classname="Physician Search Features" name="Click on &quot;show more results&quot; button and validate the count of doctorList" time="3.182" />
-  <testcase classname="Physician Search Features" name="Scroll back to top and Enter Valid Location inputfield" time="1.33" />
-  <testcase classname="Physician Search Features" name="Select Entry from suggestions and click on search button" time="2.336" />
-  <testcase classname="Physician Search Features" name="Check Online Bookable Checkbox and Validate the timeFrame Element is Visble" time="0.181" />
-  <testcase classname="Physician Search Features" name="Click on Search Button and Validate physicians with online bookable appointments are displayed" time="1.222" />
-  <testcase classname="Physician Search Features" name="Check „Video-Conference“-Checkbox, empty the &quot;Name&quot; inputfield and click the „Search Button“ Validate physician with Video Conference" time="1.443" />
-  <testcase classname="Physician Search Features" name="Uncheck „Video-Conference“ Checkbox, check „Barrier-Free“ Checkbox and click search button then Validate barrier-free state are displayed" time="6.878" />
-  <testcase classname="Physician Search Features" name="Check the „Alphabetical-Sort“ option in the sorting section and validate that data should be sorted by physician lastname" time="4.734">
+<testsuites disabled="0" errors="0" failures="2" tests="11" time="51.94">
+ <testsuite name="Physician Search Features" timestamp="2020-03-20T12:25:06" hostname="localhost" time="51.94" errors="0" tests="11" skipped="0" disabled="0" failures="2">
+  <testcase classname="Physician Search Features" name="Scrolling to bottom of the page and Verify &quot;show more results&quot; button" time="18.864" />
+  <testcase classname="Physician Search Features" name="Click on &quot;show more results&quot; button and validate the count of doctorList" time="3.158" />
+  <testcase classname="Physician Search Features" name="Scroll back to top and Enter Valid Location inputfield" time="1.375" />
+  <testcase classname="Physician Search Features" name="Select Entry from suggestions and click on search button" time="2.341" />
+  <testcase classname="Physician Search Features" name="Check Online Bookable Checkbox and Validate the timeFrame Element is Visble" time="0.195" />
+  <testcase classname="Physician Search Features" name="Click on Search Button and Validate physicians with online bookable appointments are displayed" time="1.246" />
+  <testcase classname="Physician Search Features" name="Check „Video-Conference“-Checkbox, empty the &quot;Name&quot; inputfield and click the „Search Button“ Validate physician with Video Conference" time="1.492" />
+  <testcase classname="Physician Search Features" name="Uncheck „Video-Conference“ Checkbox, check „Barrier-Free“ Checkbox and click search button then Validate barrier-free state are displayed" time="7.007" />
+  <testcase classname="Physician Search Features" name="Check the „Alphabetical-Sort“ option in the sorting section and validate that data should be sorted by physician lastname" time="4.976">
    <failure type="toBe" message="Expected true to be false."><![CDATA[Error: Failed expectation
-    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:137:34
+    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:149:34
     at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
     at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
-    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)]]>
    </failure>
   </testcase>
-  <testcase classname="Physician Search Features" name="Check the „Distance-Sort“ option in the sorting section and validate sorted by relative distance" time="4.862" />
-  <testcase classname="Physician Search Features" name="Drage the Slide bar and Release and validate radius accroding to slide bar" time="6.453">
+  <testcase classname="Physician Search Features" name="Check the „Distance-Sort“ option in the sorting section and validate sorted by relative distance" time="4.86" />
+  <testcase classname="Physician Search Features" name="Drage the Slide bar and Release and validate radius accroding to slide bar" time="6.421">
    <failure type="toBe" message="Expected true to be false."><![CDATA[Error: Failed expectation
-    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:199:38
+    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:211:38
     at Array.forEach (<anonymous>)
-    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:189:33
+    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:201:33
     at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)

@@ -1,21 +1,28 @@
 let loginPage = require('../pages/loginPage')
 let searchPage = require('../pages/searchPage')
+let xl = require('../utils/excelUtil')
 
 describe('Physician Search Features', function () {
     browser.ignoreSynchronization = true;
 
-    it('Scrolling to bottom of the page and Verify "show more results" button', function () {
+    var TEST_DATA = xl.read_from_excel('Sheet1', 'E:/ProtractorWorkspace/CLICKDOC/TestData.xlsx')
 
-        loginPage.launchBrowser(browser.params.url);
-        loginPage.validateLoginImage();
-        loginPage.clickOnSearchPage();
-        searchPage.enterDoctorName('Beate');
-        searchPage.clickSearchButton();
-        browser.executeScript("window.scrollBy(0, 3500)");
-        browser.sleep(2000);
-        searchPage.validateShowMoreResultsElement();
-        console.log("==========================================================")
+    TEST_DATA.forEach(function (data) {
 
+        it('Scrolling to bottom of the page and Verify "show more results" button', function () {
+
+
+            loginPage.launchBrowser(browser.params.url);
+            loginPage.validateLoginImage();
+            loginPage.clickOnSearchPage();
+            searchPage.enterDoctorName(data.UserName);
+            searchPage.clickSearchButton();
+            browser.executeScript("window.scrollBy(0, 3500)");
+            browser.sleep(2000);
+            searchPage.validateShowMoreResultsElement();
+            console.log("==========================================================")
+
+        })
     })
 
     it('Click on "show more results" button and validate the count of doctorList', function () {
@@ -28,10 +35,14 @@ describe('Physician Search Features', function () {
 
         console.log("==========================================================")
     })
+    
+    var TEST_DATA = xl.read_from_excel('Sheet1', 'E:/ProtractorWorkspace/CLICKDOC/TestData.xlsx')
+
+    TEST_DATA.forEach(function (loc) {
 
     it('Scroll back to top and Enter Valid Location inputfield', function () {
         browser.executeScript("window.scrollBy(0, -3500)");
-        searchPage.enterValueOnLocation('56567');
+        searchPage.enterValueOnLocation(loc.Location);
         browser.sleep(1000)
         element.all(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[2]/div/div/div[1]/typeahead-container'))
             .getText().then(function (text) {
@@ -44,6 +55,7 @@ describe('Physician Search Features', function () {
 
         console.log("==========================================================")
     })
+})
 
     it('Select Entry from suggestions and click on search button', function () {
 
@@ -156,11 +168,11 @@ describe('Physician Search Features', function () {
                 console.log("==========================================================")
                 //Sorted Distance Radius Programatically
                 let sortedDistanceProgramatically = JSON.parse(JSON.stringify(sortedDistanceFromApplication));
-                let SortDistPro= sortedDistanceProgramatically.sort(function (a,b){
-                 return a-b;
+                let SortDistPro = sortedDistanceProgramatically.sort(function (a, b) {
+                    return a - b;
                 })
                 console.log(SortDistPro)
-                if (JSON.stringify(sortedDistanceFromApplication) === JSON.stringify(SortDistPro) ) {
+                if (JSON.stringify(sortedDistanceFromApplication) === JSON.stringify(SortDistPro)) {
                     expect(true).toBe(true);
                     console.log('Distance Sorting is showing accurately')
                 }

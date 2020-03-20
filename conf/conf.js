@@ -15,7 +15,7 @@ exports.config = {
 
   framework: 'jasmine',
 
-  specs: ['../tests/*.js'],
+  specs: ['../tests/physicianSearchTest2.js'],
 
   params: {
     url: 'https://demo.clickdoc.de/cms-de/',

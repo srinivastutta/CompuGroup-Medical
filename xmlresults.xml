@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="2" tests="11" time="51.94">
- <testsuite name="Physician Search Features" timestamp="2020-03-20T12:25:06" hostname="localhost" time="51.94" errors="0" tests="11" skipped="0" disabled="0" failures="2">
-  <testcase classname="Physician Search Features" name="Scrolling to bottom of the page and Verify &quot;show more results&quot; button" time="18.864" />
-  <testcase classname="Physician Search Features" name="Click on &quot;show more results&quot; button and validate the count of doctorList" time="3.158" />
-  <testcase classname="Physician Search Features" name="Scroll back to top and Enter Valid Location inputfield" time="1.375" />
-  <testcase classname="Physician Search Features" name="Select Entry from suggestions and click on search button" time="2.341" />
-  <testcase classname="Physician Search Features" name="Check Online Bookable Checkbox and Validate the timeFrame Element is Visble" time="0.195" />
-  <testcase classname="Physician Search Features" name="Click on Search Button and Validate physicians with online bookable appointments are displayed" time="1.246" />
-  <testcase classname="Physician Search Features" name="Check „Video-Conference“-Checkbox, empty the &quot;Name&quot; inputfield and click the „Search Button“ Validate physician with Video Conference" time="1.492" />
-  <testcase classname="Physician Search Features" name="Uncheck „Video-Conference“ Checkbox, check „Barrier-Free“ Checkbox and click search button then Validate barrier-free state are displayed" time="7.007" />
-  <testcase classname="Physician Search Features" name="Check the „Alphabetical-Sort“ option in the sorting section and validate that data should be sorted by physician lastname" time="4.976">
-   <failure type="toBe" message="Expected true to be false."><![CDATA[Error: Failed expectation
-    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:149:34
-    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]>
-   </failure>
-  </testcase>
-  <testcase classname="Physician Search Features" name="Check the „Distance-Sort“ option in the sorting section and validate sorted by relative distance" time="4.86" />
-  <testcase classname="Physician Search Features" name="Drage the Slide bar and Release and validate radius accroding to slide bar" time="6.421">
-   <failure type="toBe" message="Expected true to be false."><![CDATA[Error: Failed expectation
-    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:211:38
-    at Array.forEach (<anonymous>)
-    at C:\Users\pc\Desktop\CLICKDOC\tests\physicianSearchTest2.js:201:33
-    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]>
-   </failure>
-  </testcase>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="33.283">
+ <testsuite name="CreateAppointment Feature" timestamp="2020-03-26T20:38:01" hostname="localhost" time="33.283" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="CreateAppointment Feature" name="AppointmentTest" time="33.282" />
  </testsuite>
 </testsuites>

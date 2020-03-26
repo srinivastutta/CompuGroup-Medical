@@ -27,6 +27,7 @@ let loginPage = function () {
         browser.manage().window().maximize();
         browser.waitForAngularEnabled(false);
         browser.manage().timeouts().implicitlyWait(10000);
+        browser.manage().timeouts().pageLoadTimeout(30000);
 
     };
 

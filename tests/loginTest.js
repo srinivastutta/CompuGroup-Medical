@@ -1,4 +1,5 @@
 let loginPage = require('../pages/loginPage')
+let Wait = require ('../utils/wait')
 
 describe('Login Features', function () {
 
@@ -48,6 +49,7 @@ describe('Login Features', function () {
         browser.sleep(3000)
         let f2 = element(by.xpath('//*[@id="iframeDialog"]')).getWebElement();
         browser.switchTo().frame(f2);
+      
         loginPage.enterEmailInput(browser.params.invalidUserId);
         loginPage.clickOnLoginButton();
         loginPage.validatePasswordInputIsDisplayed();
@@ -62,7 +64,6 @@ describe('Login Features', function () {
         loginPage.enterEmailInput(browser.params.validUserId);
         loginPage.enterPasswordInput(browser.params.validPassword);
         loginPage.clickOnLoginButton();
-
         browser.sleep(8000);
         loginPage.userNameValidation(browser.params.userName)
         loginPage.titleValidation(browser.params.userProfileTitle)

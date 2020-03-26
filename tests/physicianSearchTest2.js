@@ -120,17 +120,21 @@ describe('Physician Search Features', function () {
                 //Trimming LastName from Doctor FullName
                 let variable1 = [];
                 DroctorFullName.forEach(function (EachDroctorString) {
-
+                    //removing Dr. and , from Doctor FullName and pushing only the string, which is before
+                    //comma  into Variable1 (I considered before comma is a last name)
                     if (EachDroctorString.includes(',')) {
                         if (EachDroctorString.includes('Dr.') || EachDroctorString.includes('dr.')) {
                             var str = EachDroctorString.substring(0, EachDroctorString.indexOf(","));
                             variable1.push(str.replace('Dr. ', '').replace('dr. ', ''));
                         }
+                        // pushing only the string, which is before comma
                         else {
                             variable1.push(EachDroctorString.substring(0, EachDroctorString.indexOf(",")));
                         }
                     }
                     else {
+                        //extracting last word in the same string, if it does not contain commas only
+                        //So first if condition is for extracting last name using before comma condition
                         var n = EachDroctorString.split(" ");
                         variable1.push(n[n.length - 1]);
                     }
@@ -196,13 +200,15 @@ describe('Physician Search Features', function () {
         browser.sleep(3000)
         //Getting the Radius KM from Application
         element.all(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card/div/div[2]/div/div/div[1]/div[2]/span[2]/span[1]'))
-            .getText().then(function (distanceNumbers) {
+            .getText().then (function (distanceNumbers) {
 
                 distanceNumbers.forEach(function (distNumber) {
                     //just to find number
                     let item = distNumber.match(/\d/g);
-                    //checking <= 10 KM or >10 KM 
+                    //just remove KM and Space
                     KM = item.join("");
+                    
+                    //checking <= 10 KM or >10 KM 
                     if (KM <= 1000) {
                         expect(true).toBe(true);
                     }

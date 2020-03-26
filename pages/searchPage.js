@@ -12,8 +12,8 @@ let searchPage = function () {
     let result_Distance_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]/div/span[2]'));
     let video_Conference_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[2]/div[1]'));
     let detail_Link = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]/div[1]/span[2]/a'));
-    let result_Barrier_Element = element (by.xpath('/html/body/app-root/div[2]/div/app-institution-profile/div/div/div/div[2]/div[1]/div[2]/app-institution-profile-card/div/div[2]/div/div/div[4]/div/div/div/span[2]'));
-    
+    let result_Barrier_Element = element(by.xpath('/html/body/app-root/div[2]/div/app-institution-profile/div/div/div/div[2]/div[1]/div[2]/app-institution-profile-card/div/div[2]/div/div/div[4]/div/div/div/span[2]'));
+
     //Search Section
     let specialization_Element = element(by.xpath('//*[@id="search-query-typeahead"]'));
     let location_Element = element(by.xpath('//*[@id="search-location-typeahead"]'));
@@ -29,7 +29,55 @@ let searchPage = function () {
     let distance_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[4]/div/div/label/div/span[2]'));
     let radius_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[5]/div/div/ng5-slider/span[3]/span'));
 
-    
+    //New Test Case
+    let promptMessage = element(by.xpath('/html/body/app-root/div[2]/app-tracking/div/div/div[2]/div[2]'));
+    let selectAppointmentType = element(by.xpath('/html/body/app-root/div[2]/div/app-physician-profile/div/div/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[2]/div/div/button'));
+    let selectOfficeHours = element(by.xpath('//*[@id="profile"]/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[2]/div/div/div/button[1]'));
+    let firstFreeAppointment = element(by.xpath('//*[@id="profile"]/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[4]/div/div[3]'));
+    let timeSlot = element(by.xpath('//*[@id="profile"]/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[4]/div/div[2]/div[2]/div[2]/div[5]'));
+    let nextButton1 = element(by.xpath('/html/body/app-root/div[2]/div/ng-component/div/div/div[2]/div[2]/div[1]/button'));
+    let nextButton2 = element(by.xpath('/html/body/app-root/div[2]/div/ng-component/div/div/div[2]/div[2]/div[1]/button'));
+
+    //New Test Funcitons
+
+    this.clickOnPromptMessage = function () {
+        promptMessage.click();
+
+    }
+
+    this.clickOnSelectAppointmentType = function () {
+        browser.actions().mouseMove(selectAppointmentType).click().perform();
+
+    }
+
+    this.clickOnOfficeHours = function () {
+        browser.actions().mouseMove(selectOfficeHours).click().perform();
+
+    }
+
+    this.clickOnfirstFreeAppointment = function () {
+        firstFreeAppointment.click();
+
+    }
+
+
+    this.clickOnTimeSlot = function () {
+        timeSlot.click();
+        browser.sleep(3000);
+
+    }
+
+
+    this.clickOnNextButton1 = function () {
+        nextButton1.click();
+        browser.sleep(1000);
+
+    }
+    this.clickOnNextButton2 = function () {
+        nextButton2.click();
+        browser.sleep(1000);
+
+    }
 
     //Result Search Section functions
 
@@ -130,7 +178,7 @@ let searchPage = function () {
 
     this.clickDetailLink = function () {
         detail_Link.click();
-    
+
     }
 
     this.validateResultDistanceElement = function () {
@@ -140,7 +188,7 @@ let searchPage = function () {
 
         })
     }
-    
+
     //Search Section functions
     this.validateSpecializationElement = function () {
         specialization_Element.isDisplayed().then(function (specialityElement) {
@@ -152,9 +200,9 @@ let searchPage = function () {
 
     this.enterDoctorName = function (docName) {
         specialization_Element.sendKeys(docName)
-        
+
     }
-    
+
 
 
     this.validateLocationElement = function () {
@@ -219,7 +267,7 @@ let searchPage = function () {
 
     this.clickSearchButton = function () {
         searchButton_Element.click();
-        browser.sleep(1000);
+        browser.sleep(2000);
     }
 
     this.validateTimeFrame_Element = function () {
@@ -250,7 +298,7 @@ let searchPage = function () {
 
     this.clickAlphabeticByDoctorElement = function () {
         alphabeticByDoctor_Element.click();
-        
+
     }
 
     this.validateDistanceElement = function () {

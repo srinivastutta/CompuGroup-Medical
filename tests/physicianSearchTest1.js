@@ -1,6 +1,7 @@
 let loginPage = require('../pages/loginPage')
 let searchPage = require('../pages/searchPage')
-let XLSX = require('xlsx')
+let xl = require('../utils/excelUtil')
+
 
 describe('Physician Search Features', function () {
 

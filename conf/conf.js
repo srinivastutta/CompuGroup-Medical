@@ -15,7 +15,7 @@ exports.config = {
 
   framework: 'jasmine',
 
-  specs: ['../tests/createAppointment.js'],
+  specs: ['../tests/testCase2.js'],
 
   params: {
     url: 'https://demo.clickdoc.de/cms-de/',
@@ -31,7 +31,7 @@ exports.config = {
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 120000
+    defaultTimeoutInterval: 60000
   },
   // Setup the report before any tests start
   beforeLaunch: function () {

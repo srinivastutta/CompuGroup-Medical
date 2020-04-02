@@ -1,44 +1,139 @@
+let Wait = require('../utils/wait')
+
 let searchPage = function () {
     //Result Search Section
-    let search_Image = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-empty-state/div/div[1]/img'));
-    let emptyNotification_Message = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-empty-state/div/div[2]/div/span'));
-    let physician_Picture_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[1]/div[1]/app-avatar/div/img'));
-    let physician_Name_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[1]/div[2]'));
-    let profile_Button_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[1]/a[2]/button'));
-    let address_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]'));
-    let online_Appointments_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[2]/div'));
-    let availableAppointments_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/app-physician-calendar/div/div[1]/div[1]/span[1]'));
-    let showMoreResults_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a'));
+    let search_Image = element(by.css('img.card-image'));
+    let emptyNotification_Message = element(by.css('span[translate="search.no.input.given.label"]'));
+    let physician_Picture_Element = element(by.css('app-physician-card:nth-child(1)>div>div>div>app-avatar>div>img'));
+    let physician_Name_Element = element(by.css('app-physician-card:nth-child(1)>div>div>div.physician-name, align-self-center'));
+    let profile_Button_Element = element(by.css('app-physician-card:nth-child(1)>div>div>a+a>button'));
+    let address_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div:nth-child(1)'));
+    let online_Appointments_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div:nth-child(2)'));
+    let availableAppointments_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>app-physician-calendar>div>div>div>span:nth-child(1)'));
+    let showMoreResults_Element = element(by.css('a.load-more-link'));
     let result_Distance_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]/div/span[2]'));
-    let video_Conference_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[2]/div[1]'));
-    let detail_Link = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]/div[1]/span[2]/a'));
-    let result_Barrier_Element = element(by.xpath('/html/body/app-root/div[2]/div/app-institution-profile/div/div/div/div[2]/div[1]/div[2]/app-institution-profile-card/div/div[2]/div/div/div[4]/div/div/div/span[2]'));
+    let video_Conference_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div:nth-child(2)>div'));
+    let detail_Link = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div>div>span+span>a.online-booking-tooltip'));
+    let result_Barrier_Element = element(by.css('span[translate="practice.flags.SG_handicappedAccessible"]'));
 
     //Search Section
-    let specialization_Element = element(by.xpath('//*[@id="search-query-typeahead"]'));
-    let location_Element = element(by.xpath('//*[@id="search-location-typeahead"]'));
-    let onlineTime_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[3]/div/div/label/span[2]'));
-    let video_Appointment = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[4]/div/div/label/span[2]'));
-    let barrier_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[5]/div/div/label/span[2]'));
-    let searchButton_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[6]/div/button'));
-    let timeFrame_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[3]/div/div[2]/div/div/div[1]/div/button'));
-
+    let specialization_Element = element(by.css('input#search-query-typeahead'));
+    let location_Element = element(by.css('input#search-location-typeahead'));
+    let onlineTime_Element = element(by.css('span[translate="search.filter.checkbox.online.booking"]'));
+    let video_Appointment = element(by.css('span[translate="search.filter.checkbox.video.appointment"]'));
+    let barrier_Element = element(by.css('span[translate="search.filter.checkbox.accessibility"]'));
+    let searchButton_Element = element(by.css('button[translate="doctorSearch.search.filter.submit"]'));
+    let timeFrame_Element = element(by.css('div[class="day dropdown dropdown-select d-block"]'));
+    let selectSecondValue = element(by.css('div>typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(2)>span'));
+    let selectSecondPhysician = element(by.css('typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(3)'));
     //Sorting Section
-    let bestResult_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[2]/div/div/label/div/span[2]'));
-    let alphabeticByDoctor_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[3]/div/div/label/div/span[2]'));
-    let distance_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[4]/div/div/label/div/span[2]'));
-    let radius_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[5]/div/div/ng5-slider/span[3]/span'));
+    let bestResult_Element = element(by.cssContainingText(".text", "Beste Ergebnisse"));
+    let alphabeticByDoctor_Element = element(by.css('div:nth-child(2) > app-sort > div > div > div:nth-child(3) > div > div > label'));
+    let distance_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[4]/div/div/label'));
 
     //New Test Case
-    let promptMessage = element(by.xpath('/html/body/app-root/div[2]/app-tracking/div/div/div[2]/div[2]'));
-    let selectAppointmentType = element(by.xpath('/html/body/app-root/div[2]/div/app-physician-profile/div/div/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[2]/div/div/button'));
-    let selectOfficeHours = element(by.xpath('//*[@id="profile"]/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[2]/div/div/div/button[1]'));
-    let firstFreeAppointment = element(by.xpath('//*[@id="profile"]/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[4]/div/div[3]'));
-    let timeSlot = element(by.xpath('//*[@id="profile"]/div/div[1]/div[4]/div/app-appointment-card/div/div/div/div/app-physician-calendar/div/div[4]/div/div[2]/div[2]/div[2]/div[5]'));
-    let nextButton1 = element(by.xpath('/html/body/app-root/div[2]/div/ng-component/div/div/div[2]/div[2]/div[1]/button'));
-    let nextButton2 = element(by.xpath('/html/body/app-root/div[2]/div/ng-component/div/div/div[2]/div[2]/div[1]/button'));
+    let promptMessage = element(by.css('button#matomo-reject'));
+    let selectAppointmentType = element(by.css('div.dropdown-select>button[class*="btn btn"]'));
+    let selectOfficeHours = element(by.css('div.dropdown-menu-right>button[class*="dropdown-item btn-block text-left ng-star-inserted"]:nth-of-type(1)'));
+    let firstFreeAppointment = element(by.css('div[class="first-available-time calendar-cell-mask d-flex align-items-center justify-content-center ng-star-inserted"]'));
+    let timeSlot = element(by.css('div[class="calendar-cell calendar-cell-mask justify-content-center align-items-center ng-star-inserted"]'));
+    let nextButton1 = element(by.css('button[class="btn btn-primary w-100"]'));
+    let nextButton2 = element(by.css('button[class="btn btn-primary w-100"]'));
+   // let rememberLater = element(by.xpath('/html/body/app-root/div[2]/app-header/div/div[1]/div/div/div[2]/a'));
+
+    //New Test Case 2
+
+    let requestForAppointment = element(by.css('[class="appointment-button-data"]'));
+
+    let selectTuesday = element (by.css('div.table-content.collapsed > div:nth-child(1) > div:nth-child(2) > label > span'));
+
+    let arrow = element (by.css('span[class="icon icon-G3_hideRight ng-star-inserted"]'));
+
+    let physicanName = element(by.css('[class="profile-name align-self-center"]'))
+
+    let selectSaturday = element(by.css('div.table-content > div:nth-child(1) > div:nth-child(6) > label'));
+
+    let nextbutton3 = element(by.css('button[class="btn btn-primary w-100"]'));
+
+    let pageTitle = element(by.css('div[class="appointment-wish-header-title"]'));
+
+    let noButton = element(by.css('button.btn.btn-outline-secondary.option-button.ng-star-inserted.active-option'));
+
+    let nextbutton4 = element(by.css('button[class="btn btn-primary w-100"]'));
+
+    let sucessMessage = element(by.css('.appointment-wish-success')).element(by.css('.title'));
+
+
+//functions
+
+this.validatePhysicianName = function (title) {
+    physicanName.getText().then(function (text){
+        expect(text).toBe(title)
+    })
+}
+
+
+this.clickOnRequestForAppointment = function () {
+    requestForAppointment.click();
+    
+}
+
+
+this.clickOnSelectTuesday = function () {
+    selectTuesday.click();
+    
+}
+this.clickOnArrow = function () {
+    arrow.click();
+    
+}
+
+this.ClickOnSaturday = function () {
+    selectSaturday.click();
+    
+}
+
+
+this.clickOnNextbutton3 = function () {
+    nextbutton3.click();
+    
+}
+
+
+
+this.validatePageTitle = function (title) {
+    pageTitle.getText().then(function (text){
+        expect(text).toBe(title)
+    })
+    
+}
+
+this.validateNoButton = function (text) {
+    noButton.getText().then(function (value){
+        expect(value).toBe(text)
+    })
+}
+
+this.clickOnNextbutton4 = function () {
+    nextbutton4.click();
+    
+}
+
+this.clickOnNextbutton2 = function (title) {
+    sucessMessage.getText().then(function (text){
+        expect(text).toBe(title)
+    })
+}
+
+
 
     //New Test Funcitons
+
+    this.ClickOnRememberLater = function () {
+        rememberLater.click();
+        
+    }
+
 
     this.clickOnPromptMessage = function () {
         promptMessage.click();
@@ -46,44 +141,39 @@ let searchPage = function () {
     }
 
     this.clickOnSelectAppointmentType = function () {
-        browser.actions().mouseMove(selectAppointmentType).click().perform();
-
+        selectAppointmentType.click()
+    
     }
 
     this.clickOnOfficeHours = function () {
-        browser.actions().mouseMove(selectOfficeHours).click().perform();
+        selectOfficeHours.click();
 
     }
 
     this.clickOnfirstFreeAppointment = function () {
         firstFreeAppointment.click();
-
+  
     }
 
 
     this.clickOnTimeSlot = function () {
         timeSlot.click();
-        browser.sleep(3000);
-
     }
 
 
     this.clickOnNextButton1 = function () {
         nextButton1.click();
-        browser.sleep(1000);
 
     }
     this.clickOnNextButton2 = function () {
         nextButton2.click();
-        browser.sleep(1000);
 
     }
 
     //Result Search Section functions
 
     this.validateResultBarrierElement = function (message) {
-        browser.sleep(3000);
-        result_Barrier_Element.isDisplayed().then(function (ResultBarrierElement) {
+       result_Barrier_Element.isDisplayed().then(function (ResultBarrierElement) {
             console.log(ResultBarrierElement);
             expect(ResultBarrierElement).toEqual(true);
 
@@ -155,7 +245,6 @@ let searchPage = function () {
     }
 
     this.validateAvailableAppointmentsElement = function () {
-        browser.sleep(2000)
         availableAppointments_Element.isDisplayed().then(function (availableAppointmentsElement) {
             console.log(availableAppointmentsElement);
             expect(availableAppointmentsElement).toEqual(true);
@@ -174,6 +263,7 @@ let searchPage = function () {
     this.clickShowMoreResultsButton = function () {
         showMoreResults_Element.click();
         browser.sleep(3000)
+
     }
 
     this.clickDetailLink = function () {
@@ -202,8 +292,17 @@ let searchPage = function () {
         specialization_Element.sendKeys(docName)
 
     }
+    this.selectSecondValueFromList = function () {
+        selectSecondValue.click();
+      
 
+    }
+    this.selectSecondPhysianFromList = function () {
+        selectSecondPhysician.click();
+      
 
+    }
+    
 
     this.validateLocationElement = function () {
         location_Element.isDisplayed().then(function (locationElement) {
@@ -267,7 +366,7 @@ let searchPage = function () {
 
     this.clickSearchButton = function () {
         searchButton_Element.click();
-        browser.sleep(2000);
+        browser.sleep(3000)
     }
 
     this.validateTimeFrame_Element = function () {
@@ -298,6 +397,7 @@ let searchPage = function () {
 
     this.clickAlphabeticByDoctorElement = function () {
         alphabeticByDoctor_Element.click();
+        browser.sleep(2000)
 
     }
 
@@ -311,7 +411,8 @@ let searchPage = function () {
 
     this.clickDistanceElement = function () {
         distance_Element.click();
-        browser.sleep(2000)
+        browser.sleep(3000)
+
     }
 
     this.validateRadiusElement = function () {
@@ -323,4 +424,5 @@ let searchPage = function () {
     }
 
 }
+
 module.exports = new searchPage();

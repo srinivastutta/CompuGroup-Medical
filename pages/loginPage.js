@@ -1,25 +1,28 @@
 let loginPage = function () {
 
     //Login Page Elements
-    let login_Image = element(by.xpath('//a[@class="navbar-brand"]//img'));
-    let profile_Button = element(by.xpath('/html/body/header/div[1]/nav/div[2]/ul/li[8]/a'));
-    let search_Element = element(by.xpath('//*[@id="menu-item-10"]/a'));
+    let login_Image = element(by.css('a.navbar-brand>img[src="/cms-de/wp-content/uploads/2019/11/logo_white.png"]'));
+    let profile_Button = element(by.css('ul#menu-header-menu>li:nth-of-type(8)>a'));
+    let search_Element = element(by.css('li#menu-item-10>a[data-text="Suchseite"]'));
+    let promptMessage = element(by.css('button#matomo-reject'));
 
     //Login Dialog Box Elements
-    let close_Button = element(by.xpath('//span[@class="iframe-dialog-close icon icon-CO_close"]'));
-    let email_Input = element(by.xpath('//*[@id="mat-input-0"]'));
-    let password_Input = element(by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[1]/form/mat-form-field[2]/div/div[1]/div[1]/input'));
-    let remember_Password = element(by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[1]/div/span'));
-    let registration_Button = element(by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[2]/div[1]/button'));
-    let login_Button = element(by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[2]/div[2]/button'));
-    let login_Message = element(by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[1]/div[1]/div/app-error-message/div/div/p'));
-
+    let close_Button = element(by.css('span.iframe-dialog-close, icon, icon-CO_close'));
+    let email_Input = element(by.css('input#mat-input-0'));
+    let password_Input = element(by.css('input#mat-input-1'));
+    //let email_Input1 = element(by.css('input#mat-input-2'));
+    //let password_Input1 = element(by.css('input#mat-input-3'));
+    let remember_Password = element(by.css('span.link, margin-top-15'));
+    let registration_Button = element(by.css('body > app-root > div > div > main > app-login > div > div.row.justify-content-center.mx-auto.w-100.xs-content-area > div > div > div.col-11.col-md-8.col-lg-6.col-xl-7 > div.row.d-none.d-md-flex > div:nth-child(1) > button'));
+    let login_Button = element(by.buttonText('Einloggen'));
+    let login_Message = element(by.css('div.col-12>app-error-message.ng-star-inserted>div>div>p'));
+    let back_Button = element(by.css('div[class="row justify-content-center mx-auto ng-star-inserted"]>div>a'));
     //User Profile Elements
     let user_name = element(by.xpath('//*[@id="header-container"]/div[1]/span'));
-    let user_Icon = element(by.xpath('/html/body/app-root/div[2]/app-header/div/div[2]/div/div[2]/ul/li[7]/a/app-avatar/div/img'));
-    let myProfile_DropDown = element(by.xpath('/html/body/app-root/div[2]/app-header/div/div[2]/div/div[2]/ul/li[7]/a/div/span'));
-    let myProfile_Element = element(by.xpath('/html/body/app-root/div[2]/app-header/div/div[2]/div/div[2]/ul/li[7]/div/div/a[1]/div/span[2]'));
-    let logout_Element = element(by.xpath('/html/body/app-root/div[2]/app-header/div/div[2]/div/div[2]/ul/li[7]/div/div/a[2]/div/span[2]'));
+    let user_Icon = element(by.css('div[class="profile-picture-container ng-star-inserted"]>app-avatar>div>img[alt="avatar-picture"]'));
+    let myProfile_DropDown = element(by.css('ul[class="menu-desktop d-lg-block d-md-none d-sm-none"]>li:nth-of-type(7)>a>div'));
+    let myProfile_Element = element(by.css('div.dropdown-container>a[routerlink="my-profile"]>div>span:nth-of-type(2)'));
+    let logout_Element = element(by.css('body > app-root > div.app-container.ng-star-inserted.show-security-banner > app-header > div > div.header-wrapper > div > div.float-right > ul > li.menu-item.fullOpacity.menu-dropdown-item.ng-tns-c1-0.ng-star-inserted.open.show > div > div > a:nth-child(2) > div > span.menu-text'));
 
     //Browser Initialization
     this.launchBrowser = function (url) {
@@ -28,6 +31,7 @@ let loginPage = function () {
         browser.waitForAngularEnabled(false);
         browser.manage().timeouts().implicitlyWait(10000);
         browser.manage().timeouts().pageLoadTimeout(30000);
+        promptMessage.click();
 
     };
 
@@ -43,21 +47,17 @@ let loginPage = function () {
     this.validateLoginImage = function () {
         login_Image.isDisplayed().then(function (CLICKDOCImage) {
             console.log('Is CLICKDOC Image is Displayed ? : ' + CLICKDOCImage)
-            browser.sleep(1000)
             expect(CLICKDOCImage).toBe(true);
         })
     };
 
     this.clickOnProfileButton = function () {
-        
-       // browser.actions().mouseDown(profile_Button).click().perform();
         profile_Button.click();
-       // browser.sleep(2000)
     };
 
     this.clickOnSearchPage = function () {
         search_Element.click();
-        browser.sleep(1000)
+        
     };
 
     this.validateProfileButtonIsDisplayed = function () {
@@ -69,6 +69,11 @@ let loginPage = function () {
     };
 
     //Login Dialog Box Functions
+
+    this.clickOnBackButton = function () {
+        back_Button.click();
+    }
+
     this.validateCloseButtonIsDisplayed = function () {
         close_Button.isDisplayed().then(function (XButton) {
             console.log('Is X Button Element Displayed ? : ' + XButton)
@@ -83,6 +88,15 @@ let loginPage = function () {
         password_Input.sendKeys(enterPassword)
     };
 
+    this.enterEmailInput1 = function (enterEmail) {
+        email_Input1.sendKeys(enterEmail);
+    };
+
+    this.enterPasswordInput1 = function (enterPassword) {
+        password_Input1.sendKeys(enterPassword)
+    };
+
+
     this.clickOnRememberPassword = function () {
         remember_Password.click();
 
@@ -93,6 +107,7 @@ let loginPage = function () {
     };
     this.clickOnLoginButton = function () {
         login_Button.click();
+        
 
     };
 
@@ -114,7 +129,11 @@ let loginPage = function () {
             console.log('Is PassWord Element Displayed ? : ' + passElement)
         })
     }
-
+    this.validatePassword1InputIsDisplayed = function () {
+        password_Input1.isDisplayed().then(function (passElement) {
+            console.log('Is PassWord Element Displayed ? : ' + passElement)
+        })
+    }
     this.validateRememberPasswordIsDisplayed = function () {
         remember_Password.isDisplayed().then(function (rememberpassElement) {
             console.log('Is Remember PassWord Element Displayed ? : ' + rememberpassElement)
@@ -136,8 +155,8 @@ let loginPage = function () {
     //User Profile Functions
 
     this.userNameValidation = function (uName) {
-        browser.sleep(2000)
-        user_name.getText().then(function (name) {
+       user_name.getText().then(function (name) {
+           console.log(name);
         expect(name).toEqual(uName);
         
     })
@@ -152,7 +171,6 @@ let loginPage = function () {
 
     this.clickOnMyProfileDropDown = function () {
         myProfile_DropDown.click();
-        browser.sleep(2000)
 
     }
     this.validateMyProfileIsDisplayed = function () {
@@ -171,7 +189,6 @@ let loginPage = function () {
 
     this.clickOnLogout = function () {
         logout_Element.click();
-        browser.sleep(2000)
 
     }
 }

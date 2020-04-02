@@ -3,7 +3,7 @@ let Wait = require ('../utils/wait')
 
 describe('Login Features', function () {
 
-    //browser.ignoreSynchronization = true;
+    browser.ignoreSynchronization = true;
 
     it('Verify CLICKDOC Image is Displayed on HomePage', function () {
 
@@ -15,8 +15,9 @@ describe('Login Features', function () {
 
     it('Verify Login Dialog Box Elements are Displayed ', function () {
         loginPage.clickOnProfileButton();
+        Wait.genericWait(element(by.css('span.iframe-dialog-close, icon, icon-CO_close')));
         loginPage.validateCloseButtonIsDisplayed();
-        let f1 = element(by.xpath('//*[@id="iframeDialog"]')).getWebElement();
+        let f1 = element(by.css('#iframeDialog')).getWebElement();
         browser.switchTo().frame(f1);
         loginPage.validateEmailInputIsDisplayed();
         loginPage.validatePasswordInputIsDisplayed();
@@ -45,12 +46,10 @@ describe('Login Features', function () {
     })
 
     it('Verify Login functionality with invalid email and empty password', function () {
-        browser.refresh();
-        browser.sleep(3000)
-        let f2 = element(by.xpath('//*[@id="iframeDialog"]')).getWebElement();
-        browser.switchTo().frame(f2);
-      
+        loginPage.enterEmailInput(protractor.Key.chord(protractor.Key.CONTROL, 'a'));
         loginPage.enterEmailInput(browser.params.invalidUserId);
+        loginPage.enterPasswordInput(protractor.Key.chord(protractor.Key.CONTROL, 'a'));
+        loginPage.enterPasswordInput(protractor.Key.chord(protractor.Key.DELETE));
         loginPage.clickOnLoginButton();
         loginPage.validatePasswordInputIsDisplayed();
         console.log("==========================================================")
@@ -58,21 +57,24 @@ describe('Login Features', function () {
     })
 
     it('Verify Login functionality with valid email and valid password', function () {
-        browser.refresh();
-        let f2 = element(by.xpath('//*[@id="iframeDialog"]')).getWebElement();
-        browser.switchTo().frame(f2);
+        loginPage.enterEmailInput(protractor.Key.chord(protractor.Key.CONTROL, 'a'));
         loginPage.enterEmailInput(browser.params.validUserId);
+        loginPage.enterPasswordInput(protractor.Key.chord(protractor.Key.CONTROL, 'a'));
         loginPage.enterPasswordInput(browser.params.validPassword);
         loginPage.clickOnLoginButton();
-        browser.sleep(8000);
-        loginPage.userNameValidation(browser.params.userName)
+        
+        Wait.genericWait(element(by.css('div[class="profile-picture-container ng-star-inserted"]>app-avatar>div>img[alt="avatar-picture"]')));
+        Wait.waitForElementIsDisplayed(element(by.xpath('//*[@id="header-container"]/div[1]/span')));
         loginPage.titleValidation(browser.params.userProfileTitle)
+
         loginPage.userIconValidation();
+        loginPage.userNameValidation(browser.params.userName)
         console.log("==========================================================")
     })
 
     it('Verify Profile Button having MyProfile and Logout Elements', function () {
         loginPage.clickOnMyProfileDropDown();
+        Wait.genericWait(element(by.css('div.dropdown-container>a[routerlink="my-profile"]>div>span:nth-of-type(2)')));
         loginPage.validateMyProfileIsDisplayed();
         loginPage.validateLogoutIsDisplayed();
 
@@ -81,9 +83,9 @@ describe('Login Features', function () {
 
     it('Verify LogOut Functionality ', function () {
         loginPage.clickOnLogout();
-        browser.sleep(2000)
+        Wait.genericWait(element(by.css('ul#menu-header-menu>li:nth-of-type(8)>a')));
         loginPage.validateProfileButtonIsDisplayed();
-
+        
         console.log("==========================================================")
     })
 

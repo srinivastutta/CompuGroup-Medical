@@ -1,26 +1,35 @@
 var Wait = function () {
 
-    //wait for element to present
-    this.waitForElement = function (element) {
-        return browser.driver.wait(() => (element.isPresent()), 80000);
+  //wait for element to display
+  this.waitForElementIsDisplayed = function (element) {
+    return browser.wait((element).isDisplayed(), 30000).then(function () {
+      return true;
+    }, function () {
+      return false;
+    });
+  }
 
-    }
+  // Waits for the element with id 'abc' to be clickable.
+  this.waitForElementToBeClickable = function (element) {
+    var EC = protractor.ExpectedConditions;
+    return browser.wait(EC.elementToBeClickable(element), 30000).then(function () {
+      return true;
+    }, function () {
+      return false;
+    });
+  }
 
+  this.genericWait = function (Condition) {
+    var EC = protractor.ExpectedConditions;
 
-    //wait for element to display
-    this.waitForElementIsDisplayed = function (element) {
-        return browser.wait(() => (element.isDisplayed()), 60000);
+    return browser.wait(EC.presenceOf(Condition), 60000).then(function () {
+      return true;
+    }, function () {
+      return false;
+    });
+  }
+  
 
-    }
-
-    this.waitForElementVisibility = function (element) {
-        var EC = protractor.ExpectedConditions;
-
-        browser.driver.wait(function (element) {
-            return browser.wait(EC.visibilityOf(element), 80000);
-            
-        });
-    }
 }
 
 module.exports = new Wait();

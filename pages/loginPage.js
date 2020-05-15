@@ -6,7 +6,7 @@ let loginPage = function () {
     let search_Element = element(by.css('li#menu-item-10>a[data-text="Suchseite"]'));
     let promptMessage = element(by.css('button#matomo-reject'));
 
-    //Login Dialog Box Elements --
+    //Login Dialog Box Elements 
     let close_Button = element(by.css('span.iframe-dialog-close, icon, icon-CO_close'));
     let email_Input = element(by.css('input#mat-input-0'));
     let password_Input = element(by.css('input#mat-input-1'));

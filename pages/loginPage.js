@@ -14,7 +14,7 @@ let loginPage = function () {
     //let password_Input1 = element(by.css('input#mat-input-3'));
     let remember_Password = element(by.css('span.link, margin-top-15'));
     let registration_Button = element(by.css('body > app-root > div > div > main > app-login > div > div.row.justify-content-center.mx-auto.w-100.xs-content-area > div > div > div.col-11.col-md-8.col-lg-6.col-xl-7 > div.row.d-none.d-md-flex > div:nth-child(1) > button'));
-    let login_Button = element(by.buttonText('Einloggen'));
+    let login_Button = element(by.css('button[class="life-btn life-primary-btn colored"]'));
     let login_Message = element(by.css('div.col-12>app-error-message.ng-star-inserted>div>div>p'));
     let back_Button = element(by.css('div[class="row justify-content-center mx-auto ng-star-inserted"]>div>a'));
     //User Profile Elements
@@ -22,7 +22,7 @@ let loginPage = function () {
     let user_Icon = element(by.css('div[class="profile-picture-container ng-star-inserted"]>app-avatar>div>img[alt="avatar-picture"]'));
     let myProfile_DropDown = element(by.css('ul[class="menu-desktop d-lg-block d-md-none d-sm-none"]>li:nth-of-type(7)>a>div'));
     let myProfile_Element = element(by.css('div.dropdown-container>a[routerlink="my-profile"]>div>span:nth-of-type(2)'));
-    let logout_Element = element(by.css('body > app-root > div.app-container.ng-star-inserted.show-security-banner > app-header > div > div.header-wrapper > div > div.float-right > ul > li.menu-item.fullOpacity.menu-dropdown-item.ng-tns-c1-0.ng-star-inserted.open.show > div > div > a:nth-child(2) > div > span.menu-text'));
+    let logout_Element = element(by.css('div > a:nth-child(2)>div>span.menu-text'));
 
     //Browser Initialization
     this.launchBrowser = function (url) {
@@ -114,7 +114,7 @@ let loginPage = function () {
     this.validateLoginMessage = function () {
         login_Message.getText().then(function (text) {
             console.log(text)
-            expect(text).toEqual('Bitte überprüfen Sie Ihre E-Mail-Adresse, Passwort und probieren Sie es noch einmal.');
+            expect(text).toEqual('Bitte überprüfen Sie Ihre Eingaben und probieren Sie es erneut. Haben Sie noch keine CGM LIFE ID?');
         })
     }
 
@@ -142,7 +142,7 @@ let loginPage = function () {
 
     this.validateRegistrationButtonIsDisplayed = function () {
         registration_Button.isDisplayed().then(function (registrationButtonElement) {
-            console.log('Is Remember PassWord Element Displayed ? : ' + registrationButtonElement)
+            console.log('Is Registration Button Element Displayed ? : ' + registrationButtonElement)
         })
     }
 

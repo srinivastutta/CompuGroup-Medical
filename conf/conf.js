@@ -15,7 +15,7 @@ exports.config = {
 
   framework: 'jasmine',
 
-  specs: ['../tests/loginTest.js'],
+  specs: ['../tests/createAppointment.js'],
 
   params: {
     url: 'https://demo.clickdoc.de/cms-de/',

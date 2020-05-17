@@ -25,7 +25,7 @@ let searchPage = function () {
     let searchButton_Element = element(by.css('button[translate="doctorSearch.search.filter.submit"]'));
     let timeFrame_Element = element(by.css('div[class="day dropdown dropdown-select d-block"]'));
     let selectSecondValue = element(by.css('div>typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(2)>span'));
-    let selectSecondPhysician = element(by.css('typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(3)'));
+    let selectfirstPhysician = element(by.css('typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(2)'));
     //Sorting Section
     let bestResult_Element = element(by.cssContainingText(".text", "Beste Ergebnisse"));
     let alphabeticByDoctor_Element = element(by.css('div:nth-child(2) > app-sort > div > div > div:nth-child(3) > div > div > label'));
@@ -298,7 +298,7 @@ this.clickOnNextbutton2 = function (title) {
 
     }
     this.selectSecondPhysianFromList = function () {
-        selectSecondPhysician.click();
+        selectfirstPhysician.click();
       
 
     }

@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="8" time="25.484">
- <testsuite name="Login Features" timestamp="2020-05-15T15:34:44" hostname="localhost" time="25.484" errors="0" tests="8" skipped="0" disabled="0" failures="0">
-  <testcase classname="Login Features" name="Verify CLICKDOC Image is Displayed on HomePage" time="7.212" />
-  <testcase classname="Login Features" name="Verify Login Dialog Box Elements are Displayed " time="7.213" />
-  <testcase classname="Login Features" name="Verify Login functionality wihout Credentials  " time="0.251" />
-  <testcase classname="Login Features" name="Verify Login functionality with valid email and invalid password" time="1.923" />
-  <testcase classname="Login Features" name="Verify Login functionality with invalid email and empty password" time="0.496" />
-  <testcase classname="Login Features" name="Verify Login functionality with valid email and valid password" time="7.39" />
-  <testcase classname="Login Features" name="Verify Profile Button having MyProfile and Logout Elements" time="0.233" />
-  <testcase classname="Login Features" name="Verify LogOut Functionality " time="0.765" />
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="28.384">
+ <testsuite name="CreateAppointment Feature" timestamp="2020-05-17T12:49:37" hostname="localhost" time="28.384" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="CreateAppointment Feature" name="Book Doctor Appointment" time="28.382" />
  </testsuite>
 </testsuites>

@@ -14,7 +14,7 @@ describe('CreateAppointment Feature', function () {
         
         loginPage.clickOnSearchPage();
         searchPage.enterDoctorName('repa');
-        Wait.waitForElementIsDisplayed(element(by.css('typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(3)')))
+        Wait.waitForElementIsDisplayed(element(by.css('typeahead-container[class="dropdown open dropdown-menu"]>button:nth-child(2)')))
         searchPage.selectSecondPhysianFromList();
         Wait.waitForElementToBeClickable(element(by.css('div.dropdown-select>button[class*="btn btn"]')));
         searchPage.clickOnSelectAppointmentType();

@@ -40,7 +40,7 @@ describe('Physician Search Features', function () {
         searchPage.validateBestResultElement()
         searchPage.validateAlphabeticByDoctorElement();
         //Wait.waitForElementToBeClickable(element(by.cssContainingText('.text, ng-star-inserted','Entfernung')));
-        searchPage.validateDistanceElement();
+        searchPage.validateRadiusElement();
         searchPage.validateRadiusElement();
         console.log("==========================================================")
 

@@ -11,7 +11,7 @@ let searchPage = function () {
     let online_Appointments_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div:nth-child(2)'));
     let availableAppointments_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>app-physician-calendar>div>div>div>span:nth-child(1)'));
     let showMoreResults_Element = element(by.css('a.load-more-link'));
-    let result_Distance_Element = element(by.xpath('//*[@id="search"]/div/div[3]/div/div/app-physician-card[1]/div/div[2]/div/div/div[1]/div/span[2]'));
+    let result_Distance_Element = element(by.css('div.col-sm-12.col-md-8.col-lg-9 > div > div > app-physician-card:nth-child(1) > div > div.card-body > div > div > div:nth-child(1) > div:nth-child(2) > span.description-text'));
     let video_Conference_Element = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div:nth-child(2)>div'));
     let detail_Link = element(by.css('app-physician-card:nth-child(1)>div>div+div>div>div>div>div>span+span>a.online-booking-tooltip'));
     let result_Barrier_Element = element(by.css('span[translate="practice.flags.SG_handicappedAccessible"]'));
@@ -20,7 +20,7 @@ let searchPage = function () {
     let specialization_Element = element(by.css('input#search-query-typeahead'));
     let location_Element = element(by.css('input#search-location-typeahead'));
     let onlineTime_Element = element(by.css('span[translate="search.filter.checkbox.online.booking"]'));
-    let video_Appointment = element(by.css('span[translate="search.filter.checkbox.video.appointment"]'));
+    let video_Appointment = element(by.css('label>span[translate="search.filter.checkbox.video.appointment"]'));
     let barrier_Element = element(by.css('span[translate="search.filter.checkbox.accessibility"]'));
     let searchButton_Element = element(by.css('button[translate="doctorSearch.search.filter.submit"]'));
     let timeFrame_Element = element(by.css('div[class="day dropdown dropdown-select d-block"]'));
@@ -29,7 +29,7 @@ let searchPage = function () {
     //Sorting Section
     let bestResult_Element = element(by.cssContainingText(".text", "Beste Ergebnisse"));
     let alphabeticByDoctor_Element = element(by.css('div:nth-child(2) > app-sort > div > div > div:nth-child(3) > div > div > label'));
-    let distance_Element = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[4]/div/div/label'));
+    let radius_Element = element(by.css('div.row.mb-3 > div > div > label'));
 
     //New Test Case
     let promptMessage = element(by.css('button#matomo-reject'));
@@ -401,16 +401,16 @@ this.clickOnNextbutton2 = function (title) {
 
     }
 
-    this.validateDistanceElement = function () {
-        distance_Element.isDisplayed().then(function (distanceElement) {
-            console.log(distanceElement);
-            expect(distanceElement).toEqual(true);
+    // this.validateDistanceElement = function () {
+    //     distance_Element.isDisplayed().then(function (distanceElement) {
+    //         console.log(distanceElement);
+    //         expect(distanceElement).toEqual(true);
 
-        })
-    }
+    //     })
+    // }
 
     this.clickDistanceElement = function () {
-        distance_Element.click();
+        radius_Element.click();
         browser.sleep(3000)
 
     }

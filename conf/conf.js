@@ -1,5 +1,6 @@
 // An example configuration file.
-var HtmlScreenshotReporter = require('C:\\Users\\pc\\node_modules\\protractor-jasmine2-screenshot-reporter');
+//var HtmlScreenshotReporter = require('C:\\Users\\pc\\node_modules\\protractor-jasmine2-screenshot-reporter');
+var HtmlScreenshotReporter = require('../node_modules/protractor-jasmine2-screenshot-reporter');
 
 var reporter = new HtmlScreenshotReporter({
   dest: 'target/screenshots',
@@ -15,7 +16,7 @@ exports.config = {
 
   framework: 'jasmine',
 
-  specs: ['../tests/createAppointment.js'],
+  specs: ['../tests/test1.js'],
 
   params: {
     url: 'https://demo.clickdoc.de/cms-de/',
@@ -31,7 +32,13 @@ exports.config = {
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 80000
+    isVerbose: true,
+    // If true, print colors to the terminal.
+    showColors: true,
+    // If true, include stack traces in failures.
+    includeStackTrace: true,
+    // Default time to wait in ms before a test fails.
+    defaultTimeoutInterval: 60000
   },
   // Setup the report before any tests start
   beforeLaunch: function () {
@@ -42,14 +49,14 @@ exports.config = {
 
   // Assign the test reporter to each running instance
   onPrepare: function () {
-    var jasmineReporters = require('C:\\Users\\pc\\node_modules\\jasmine-reporters');
+    var jasmineReporters = require('../node_modules/jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
       consolidateAll: true,
       savePath: './',
       filePrefix: 'xmlresults'
     }));
 
-    var fs = require('C:\\Users\\pc\\node_modules\\fs-extra');
+    var fs = require('../node_modules/fs-extra');
 
     fs.emptyDir('screenshots/', function (err) {
       console.log(err);
@@ -78,6 +85,7 @@ exports.config = {
       reporter.afterLaunch(resolve.bind(this, exitCode));
     });
   },
+
   //HTMLReport called once tests are finished
   onComplete: function () {
     var browserName, browserVersion;
@@ -88,7 +96,7 @@ exports.config = {
       browserVersion = caps.get('version');
       platform = caps.get('platform');
 
-      var HTMLReport = require('C:\\Users\\pc\\node_modules\\protractor-html-reporter-2');
+      var HTMLReport = require('../node_modules/protractor-html-reporter-2');
 
       testConfig = {
         reportTitle: 'Protractor Test Execution Report',

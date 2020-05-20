@@ -17,6 +17,7 @@ describe('New Feature', function () {
         loginPage.enterEmailInput(browser.params.validUserId);
         loginPage.enterPasswordInput(browser.params.validPassword);
         loginPage.clickOnLoginButton();
+        //expect(false).toBe(true);
         console.log("==========================================================")
 
 

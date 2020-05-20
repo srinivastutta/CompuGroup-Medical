@@ -22,7 +22,7 @@ var Wait = function () {
   this.genericWait = function (Condition) {
     var EC = protractor.ExpectedConditions;
 
-    return browser.wait(EC.presenceOf(Condition), 60000).then(function () {
+    return browser.wait(EC.presenceOf(Condition), 30000).then(function () {
       return true;
     }, function () {
       return false;

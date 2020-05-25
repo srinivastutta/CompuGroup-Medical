@@ -16,7 +16,7 @@ exports.config = {
 
   framework: 'jasmine',
 
-  specs: ['../tests/test1.js'],
+  specs: ['../tests/physicianSearchTest3.js'],
 
   params: {
     url: 'https://demo.clickdoc.de/cms-de/',
@@ -38,7 +38,7 @@ exports.config = {
     // If true, include stack traces in failures.
     includeStackTrace: true,
     // Default time to wait in ms before a test fails.
-    defaultTimeoutInterval: 60000
+    defaultTimeoutInterval: 160000
   },
   // Setup the report before any tests start
   beforeLaunch: function () {

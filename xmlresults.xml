@@ -1,17 +1,1007 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="1" tests="1" time="20.063">
- <testsuite name="New Feature" timestamp="2020-05-20T15:22:13" hostname="localhost" time="20.063" errors="0" tests="1" skipped="0" disabled="0" failures="1">
-  <testcase classname="New Feature" name="New Test" time="20.058">
-   <failure type="toBe" message="Expected false to be true."><![CDATA[Error: Failed expectation
-    at UserContext.<anonymous> (E:\ProtractorWorkspace\CompuGroup-Medical\tests\test1.js:20:23)
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
-    at new ManagedPromise (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
-    at ControlFlow.promise (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
-    at schedulerExecute (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+<testsuites disabled="0" errors="0" failures="91" tests="1" time="52.517">
+ <testsuite name="Physician Search Features 1" timestamp="2020-05-25T09:55:05" hostname="localhost" time="52.517" errors="0" tests="1" skipped="0" disabled="0" failures="91">
+  <testcase classname="Physician Search Features 1" name="Scrolling to bottom of the page and Verify &quot;show more results&quot; button" time="52.514">
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25
-    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
+   </failure>
+   <failure type="toBe" message="Expected true to be false, &apos;Exceeding Radius Range is more than 10KM&apos;."><![CDATA[Error: Failed expectation
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:74:42
+    at Array.forEach (<anonymous>)
+    at E:\ProtractorWorkspace\CompuGroup-Medical\tests\physicianSearchTest3.js:61:37
+    at ManagedPromise.invokeCallback_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\pc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at runMicrotasks (<anonymous>)]]>
    </failure>
   </testcase>
  </testsuite>
